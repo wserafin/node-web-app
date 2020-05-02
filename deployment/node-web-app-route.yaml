@@ -4,7 +4,7 @@ metadata:
   name: node-web-app-route
   namespace: node-web-project
 spec:
-  host: https://c100-e.us-south.containers.cloud.ibm.com:32094
+  host: c100-e.us-south.containers.cloud.ibm.com:32094
   to:
     kind: Service
     name: node-web-app-service
