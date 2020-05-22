@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineRun
+metadata:
+  generateName: node-pipeline-run
+spec:
+  pipelineRef:
+    name: node-web-app-pipeline 
+  serviceAccountNames:
+    - taskName: build-and-publish-imag 
+      serviceAccountName: node-web-app-pipeline 
